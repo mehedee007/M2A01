@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap'); */
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter-bolder {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    /* font-size: 5rem; */
+    font-variation-settings:
+        "slnt"0;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 700 */
+
+.dancing-script-italic> {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+
+
+/* Common Styles */
+
+body {
+    margin: 0;
+    background-color: #111111;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+.container {
+    width: 1060px;
+    border: 1px solid red;
+    margin: 100px 198px;
+}
+
+
+.common-button {
+    text-align: center;
+    padding: 16px 40px;
+    border-radius: 40px;
+
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+/* Header Section */
+
+
+
+header {
+    /* background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%); */
+    /* background-color: #111111; */
+    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    padding: 30px 170px 0px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.nav-links {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    margin: 0;
+    padding: 4px;
+    border-radius: 35px;
+    gap: 30px;
+}
+
+
+
+.font-color-common {
+    color: #E6533c;
+}
+
+.bg-color-common {
+    background: #E6533C;
+}
+
+.nav-link {
+    border-radius: 34px;
+    margin: 0;
+    padding: 6px;
+}
+
+.font-italic {
+    font-style: italic;
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+}
+
+/* Banner Related Styles */
+
+.banner {
+    /* display: flex;
+    align-items: center; */
+    /* width: 500px; */
+}
+
+.banner-text {
+    opacity: .5;
+}
+
+.banner-image img {
+    height: 100%;
+}
+
+.banner-title {
+    font-size: 6rem;
+    color: white;
+    font-weight: 700;
+    line-height: 10rem;
+}
+
+.banner-button {
+    text-align: center;
+    padding: 16px 40px;
+    border-radius: 40px;
+}
+
+.banner-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px;
+    border-radius: .75rem;
+    padding: 1rem 1.5rem;
+    width: 13rem;
+    height: 3.2rem;
+    /* position: relative; */
+}
+
+#circle-video {
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+}
+
+.video-content {
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.content-count {
+    /* margin: 0; */
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+/* Habit Section Styles */
+.habit-cards {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.habit-content {
+    padding: 0px 186.5px;
+    margin-bottom: 58px;
+}
+
+.habit-card-image img {
+    border-radius: 50%;
+}
+
+.habit-title {
+    font-size: 2rem;
+}
+
+/* Run Extra Mile Section */
+
+#run-extra-mile {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    gap: 165px;
+}
+
+.run-image {
+    border: 1px solid red;
+    padding: 30px 32px 29px 0px;
+
+}
+
+
+.run-image img {
+    width: calc(100% - 32px);
+    /* height: calc(100% - 30px - 29px); */
+    /* width: 366px;
+    height: 312px; */
+    border-radius: 18px;
+
+
+
+}
+
+.run-content {
+    padding: 40px 0 41px 54px;
+}
+
+.run-title {
+    font-size: 2rem;
+}
+
+
+/* Footer Section */
+footer > .container{
+    margin-bottom: 25px;
+}
+
+.footer-contents{
+    /* justify-content: space-around; */
+
+    /* align-items: center; */
+    padding: 66px 191px 59px 190px;
+    gap: 102px;
+}
+
+.footer-links{
+    gap: 110px;
+}
+
+/* Team Member Section */
+.team-content{
+    padding: 0px 190px;
+}
+
+.team-members{
+    padding: 20px;
+    gap: 20px;
+}
+
+.team-member{
+    height: 272px;
+}
+
+.team-member img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.member-info{
+    transform: translateY(-5.8rem);
+    padding: 0 20px;
+}
+
+
