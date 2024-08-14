@@ -165,11 +165,7 @@ nav {
 
 /* Banner Related Styles */
 
-.banner {
-    /* display: flex;
-    align-items: center; */
-    /* width: 500px; */
-}
+
 
 .banner-text {
     opacity: .5;
@@ -240,9 +236,7 @@ nav {
     border-radius: 50%;
 }
 
-.habit-title {
-    /* font-size: 3rem; */
-}
+
 
 /* Run Extra Mile Section */
 
@@ -406,9 +400,9 @@ footer  .container{
 
 @media screen and (max-width : 450px) {
     header{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        width:calc(100% - 2rem);
+        padding-left: 20px;
+        padding-right: 10px;
+        width:calc(100% - 30px);
 
     }
     .nav-link{
@@ -464,7 +458,7 @@ footer  .container{
         align-items: center;
         justify-content: center;
         gap:5px;
-        padding: 0;
+        /* padding: 0; */
     }
 
     
