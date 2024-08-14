@@ -7,7 +7,7 @@
     <title>BD Fitness Center</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,6 +21,7 @@
                 <ul class="nav-link">Service</ul>
                 <ul class="nav-link">Contact</ul>
                 <ul class="nav-link">About</ul>
+                <ul class="nav-mobile nav-link"><i class="fa fa-list" aria-hidden="true"></i></ul>
             </div>
         </nav>
 
@@ -36,7 +37,7 @@
                     </p>
                     <div class="banner-buttons">
                         <button class="common-button bg-color-common">Join Club Now!</button>
-                        <button class="banner-button">Download App</button>
+                        <button class="common-button banner-button">Download App</button>
                     </div>
                 </div>
                 <div class="banner-image">
@@ -107,9 +108,9 @@
 
 
         </section>
-        <section class="container flex" id="run-extra-mile">
+        <section class="container flex bg-gray" id="run-extra-mile">
             <div class="run-content flex-column">
-                <h1 class="run-title text-white">Run an Extra Mile Easily</h1>
+                <h1 class="run-title text-white font-lg-3">Run an Extra Mile Easily</h1>
                 <p class="run-text text-light">
                     We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
                 </p>
@@ -121,13 +122,79 @@
             </div>
         </section>
 
-        <section class="container" id="bmi-calculator">
-            
+        <section class="" id="bmi-calculator">
+            <div class="bmi-header">
+                <h1 class="text-white font-lg-3">BMI Calculator</h1>
+                <p class="text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="bmi-content">
+                <div class="container flex" id="bmi">
+                    <div class="bmi-chart flex-column">
+                        <h1 class="text-white">BMI Calculator Chart</h1>
+                        <table class="table-bordered">
+                            <thead class="text-white text-center">
+                                <th>
+                                    BMI
+                                </th>
+                                <th>
+                                    Weight Status
+                                </th>
+                            </thead>
+                            <tbody class="text-light text-center">
+                                <tr>
+                                    <td>
+                                        Below 18.5
+                                    </td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         18.5 - 24.9
+                                    </td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        25.0-29.9
+                                    </td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        30.0 - Above
+                                    </td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bmi-form flex-column">
+                        <div>
+                            <h1 class="text-white">Calculate Your BMI</h1>
+                            <p class="text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        </div>
+                       
+                        <form action="" class="grid" id="bmi-submit-form">
+                            <input type="text" placeholder="Height/cm" class="bmi-input">
+                            <input type="text" placeholder="Weight/kg" class="bmi-input">
+                            <input type="text" placeholder="Age" class="bmi-input">
+                            <select name="" id="" class="bmi-input text-light">
+                                <option value="Sex">Sex</option>
+                            </select>
+                            <select name="" id="activity" class="bmi-input text-light" >
+                                <option value="factor">Select an activity factor</option>
+                            </select>
+                        </form>
+                        <button class="common-button bg-color-common">Calculate</button>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
 
-        <section class="container" id="team">
+        <section class="container bg-gray" id="team">
             <div class="team-content text-center">
-                <h1 class="text-white">Meet Our Team</h1>
+                <h1 class="text-white font-lg-3">Meet Our Team</h1>
                 <p class="text-light">
                     We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
                 </p>
@@ -143,8 +210,10 @@
                 </div>
                 <div class="team-member">
                     <img src="images/trainer2.png" alt="trainer2">
-                    <h3 class="member-name text-white">Cameron Williamson</h3>
-                    <p class="text-light">Trainer</p>
+                    <div class="member-info">
+                        <h3 class="member-name text-white">Cameron Williamson</h3>
+                        <p class="text-light">Trainer</p>
+                    </div>
                 </div>
                 <div class="team-member">
                     <img src="images/trainer3.png" alt="trainer3">
@@ -178,12 +247,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-gray">
         <div class="container">
             <div class="footer-contents flex">
                 <div class="footer-content flex-column">
                     <div class="website-title inter-bolder">
-                        <h1 class="font-color-common">Fitness Center</h1>
+                        <h1 class="font-color-common">Fitness</h1>
                     </div>
                     <p class="footer-text text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
                 </div>
