@@ -340,7 +340,7 @@ nav {
 
 #bmi-submit-form{
     grid-template-columns: repeat(2, 1fr);
-    gap:.8rem;
+    gap: .8rem;
     /* grid-template-rows: repeat(2, 1fr) 2fr; */
 }
 
@@ -407,7 +407,8 @@ footer  .container{
 @media screen and (max-width : 450px) {
     header{
         padding-left: 1rem;
-        width:100%;
+        padding-right: 1rem;
+        width:calc(100% - 2rem);
 
     }
     .nav-link{
